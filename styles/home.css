@@ -1,0 +1,451 @@
+    .hero {
+        background-image: url(../assets/images/coffee_image.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        color: #ffffff;
+        padding: 0 1rem;
+        position: relative;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        text-align: left;
+        max-width: 70%;
+    }
+    
+    .hero-content .btn {
+        background-color: #e8985e;
+        color: #ffffff;
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.2s ease;
+    }
+    
+    .hero-content .btn:hover {
+        background-color: #a9714b;
+    }
+    
+    .about-us {
+        background-color: #ffffff;
+        padding: 2rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 1200px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .about-us img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        object-fit: cover;
+    }
+    
+    .about-content {
+        padding: 0;
+        text-align: left;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #603809;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+        text-align: justify;
+        color: #707070;
+        margin-bottom: 1.5rem;
+    }
+    
+    .coffee-blastL,
+    .coffee-blastR {
+        display: none;
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0% {
+            transform: translateY(-50%);
+        }
+        50% {
+            transform: translateY(-55%);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+    
+    .features {
+        background-color: #f9f9f9;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    
+    .features h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #603809;
+    }
+    
+    .features p {
+        font-size: 1.2rem;
+        color: #707070;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .card {
+        background-color: #FFF9F1;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        background-color: #FFEED8;
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 1rem;
+    }
+    
+    .card h3 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: #603809;
+    }
+    
+    .card p {
+        font-size: 1rem;
+        color: #707070;
+        margin-bottom: 1rem;
+    }
+    
+    .menu {
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .menu h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: #603809;
+    }
+    
+    .menu p {
+        font-size: 1rem;
+        color: #707070;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .menu-card {
+        background-color: #FFF9F1;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .menu-card:hover {
+        background-color: #FFEED8;
+        transform: translateY(-10px);
+        box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .menu-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .menu-card h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        margin: 15px 0 10px 0;
+        color: #603809;
+    }
+    
+    .menu-card p {
+        font-size: 1rem;
+        color: #1E1E1E;
+        margin: 0 0 10px 0;
+    }
+    
+    .menu-card .price {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #D4A55F;
+        margin-bottom: 1rem;
+    }
+    
+    .order {
+        background-image: url(../assets/images/coffeebeans.png);
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 1rem;
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    .order::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .order h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .order p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .order .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #e8985e;
+        color: #ffffff;
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.2s ease;
+        z-index: 2;
+    }
+    
+    .order .btn:hover {
+        background-color: #a9714b;
+        transform: translateY(-3px);
+    }
+    
+    @media (min-width: 768px) {
+        .hero {
+            padding: 0 2rem;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+        }
+        .hero-content p {
+            font-size: 1.2em;
+        }
+        .hero-content .btn {
+            font-size: 1.2em;
+        }
+        .about-us {
+            padding: 2rem;
+            margin: 0 auto;
+        }
+        .about-content h2 {
+            font-size: 2rem;
+        }
+        .about-content p {
+            font-size: 1.2rem;
+        }
+        .features h2 {
+            font-size: 2rem;
+        }
+        .features p {
+            font-size: 1.2rem;
+        }
+        .card {
+            padding: 1rem 2rem;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+        }
+        .card p {
+            font-size: 1.2rem;
+        }
+        .menu {
+            padding: 6rem;
+        }
+        .menu h2 {
+            font-size: 2rem;
+        }
+        .menu p {
+            font-size: 1.2rem;
+        }
+        .menu-card h3 {
+            font-size: 1.2rem;
+        }
+        .menu-card p {
+            font-size: 1.2rem;
+        }
+        .menu-card .price {
+            font-size: 1.2rem;
+        }
+        .order {
+            padding: 0 2rem;
+        }
+        .order h2 {
+            font-size: 2.5rem;
+        }
+        .order p {
+            font-size: 1.2rem;
+        }
+        .order .btn {
+            font-size: 1.2rem;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .hero {
+            padding: 0 2rem;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+        }
+        .hero-content p {
+            font-size: 1.5em;
+            max-width: 60%;
+        }
+        .hero-content .btn {
+            font-size: 1.5rem;
+        }
+        .about-us {
+            padding: 2rem;
+        }
+        .about-content h2 {
+            font-size: 2.5rem;
+        }
+        .about-content p {
+            font-size: 1.5rem;
+        }
+        .coffee-blastL {
+            display: block;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+        .coffee-blastR {
+            display: block;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+        .features h2 {
+            padding: 2.5rem;
+            font-size: 2rem;
+        }
+        .features p {
+            font-size: 1.5rem;
+        }
+        .card h3 {
+            font-size: 1.7rem;
+        }
+        .card p {
+            font-size: 1.5rem;
+        }
+        .menu {
+            padding: 6rem;
+        }
+        .menu h2 {
+            font-size: 2.5rem;
+        }
+        .menu p {
+            font-size: 1.5rem;
+        }
+        .menu-card h3 {
+            font-size: 1.7rem;
+        }
+        .menu-card p {
+            font-size: 1.5rem;
+        }
+        .menu-card .price {
+            font-size: 1.7rem;
+        }
+        .order {
+            padding: 0 2rem;
+        }
+        .order h2 {
+            font-size: 3rem;
+        }
+        .order p {
+            font-size: 1.5rem;
+        }
+        .order .btn {
+            font-size: 1.5rem;
+        }
+    }
