@@ -217,6 +217,17 @@
         object-fit: cover;
     }
     
+    .menu-card figcaption {
+        background-color: #D4A55F;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        display: inline-block;
+    }
+    
     .menu-card h3 {
         font-family: 'Playfair Display', serif;
         font-size: 1.5rem;
