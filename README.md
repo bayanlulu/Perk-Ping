@@ -1,4 +1,4 @@
-## Perk & Ping - Coffee Shop Landing Website
+## Perk & Ping - Coffee Shop Landing Website.
 
 I introduce to you **Perk & Ping**, an innovative coffee shop website designed to promote our coffee services and provide customers with further information about us while making it simple for them to contact us.
 
